@@ -5,8 +5,6 @@
 
     'use strict';
 
-    console.log('3. AngularConfig is initializing');
-
     angular
         .module('Whatsapp')
         .config(AppConfig);
@@ -128,5 +126,5 @@
 
         return deferred.promise;
     }
-    console.log('4. AngularConfig is initialized');
+
 })();

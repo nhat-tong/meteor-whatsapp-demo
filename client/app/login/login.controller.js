@@ -30,6 +30,7 @@
 
         function login() {
             if(_.isEmpty(vm.phone) || _.isEmpty(vm.password)) return;
+            vm.errors = [];
 
             Meteor.loginWithPhoneAndPassword({phone: vm.phone}, vm.password, (err,res)=> {
                 if(err) {

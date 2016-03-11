@@ -23,7 +23,6 @@
         activate();
 
         function activate() {
-            $log.info(Meteor.user());
         }
 
         function updateName() {

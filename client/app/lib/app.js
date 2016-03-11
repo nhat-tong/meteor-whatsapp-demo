@@ -6,8 +6,6 @@
 
     'use strict';
 
-    console.log('1. Angular module is initializing');
-
     // AngularJS module initialization
     angular
         .module('Whatsapp', ['angular-meteor', 'ionic', 'angularMoment']);
@@ -25,6 +23,4 @@
     function onReady() {
         angular.bootstrap(document, ['Whatsapp']);
     }
-
-    console.log('2. Angular module is initialized');
 })();

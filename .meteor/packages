@@ -27,3 +27,4 @@ accounts-password
 reywood:publish-composite
 okland:camera-ui
 chrismbeckett:toastr
+ddp-rate-limiter

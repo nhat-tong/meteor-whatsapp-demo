@@ -27,7 +27,6 @@
             if(_.isEmpty(vm.code)) return;
 
             let password = $state.params.password;
-            $log.info(password);
             Accounts.verifyPhone(vm.phone, vm.code, password, function(err,res){
                 if(err) return handleError(err);
                 $state.go('profile');
