@@ -1,0 +1,20 @@
+<ion-view title="{{vm.phone}}">
+    <ion-nav-buttons side="right">
+        <button ng-click="vm.confirm()" ng-disabled="!vm.code || vm.code.length === 0" class="button button-clear button-positive">Done</button>
+    </ion-nav-buttons>
+
+    <ion-content>
+        <div class="text-center padding">
+            We have sent you an SMS with a code to the number above
+        </div>
+        <div class="text-center padding">
+            To complete your phone number verification WhatsApp, please enter the 4-digit activation code.
+        </div>
+
+        <div class="list padding-top">
+            <label class="item item-input">
+                <input ng-model="vm.code" on-return="vm.confirm()" type="text" placeholder="Code" ng-maxlength="4">
+            </label>
+        </div>
+    </ion-content>
+</ion-view>

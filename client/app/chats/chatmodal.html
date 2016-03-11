@@ -1,0 +1,19 @@
+<ion-modal-view ng-controller="ChatModalCtrl as vm">
+    <ion-header-bar>
+        <h1 class="title">New Chat</h1>
+        <div class="buttons">
+            <button class="button button-clear button-positive" ng-click="vm.hideChatModal()">Cancel</button>
+        </div>
+    </ion-header-bar>
+
+    <ion-content>
+        <div class="list">
+            <a ng-repeat="user in vm.users" ng-click="vm.createChat(user._id)" class="item">
+                <h2>{{user.profile.name}}</h2>
+                <p>
+                    Hey there! I am using meteor-Whatsapp with meteor.
+                </p>
+            </a>
+        </div>
+    </ion-content>
+</ion-modal-view>

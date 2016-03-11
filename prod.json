@@ -1,0 +1,12 @@
+{
+  "TWILIO": {
+    "FROM": "+33975187574",
+    "SID": "ACd2f3eed61e758201070258873dd9a2a2",
+    "TOKEN": "71feecc42be2faee3bcd6c28b64916e3"
+  },
+  "ACCOUNTS_PHONE": {
+    "ADMIN_NUMBERS": ["+33975187574"],
+    "MASTER_CODE": "1234",
+    "MAX_RETRIES": 20
+  }
+}

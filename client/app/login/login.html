@@ -1,0 +1,26 @@
+<ion-view title="Your phone number">
+    <ion-nav-buttons side="right">
+        <button ng-click="vm.login()" ng-disabled="!vm.phone || vm.phone.length === 0" class="button button-clear button-positive">Done</button>
+    </ion-nav-buttons>
+    <ion-content class="login">
+        <div class="text-center instructions">
+            Please enter your phone number for login
+        </div>
+        <div>
+        <ul class="error" ng-repeat="error in vm.errors">
+            <li>{{error}}</li>
+        </ul>
+        </div>
+        <div class="list">
+            <label class="item item-input">
+                <input ng-model="vm.phone" on-return="vm.login()" type="text" placeholder="Your phone number" ng-blur="vm.messages.errors=[]"/>
+            </label>
+            <label class="item item-input">
+                <input ng-model="vm.password" type="password" placeholder="Your password" ng-blur="vm.messages.errors=[]"/>
+            </label>
+        </div>
+        <div>
+            <a href="#/signup">Need an account?</a>
+        </div>
+    </ion-content>
+</ion-view>

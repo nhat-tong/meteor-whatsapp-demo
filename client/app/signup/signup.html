@@ -1,0 +1,18 @@
+<ion-view title="Your phone number">
+    <ion-nav-buttons side="right">
+        <button ng-click="vm.signUp()" ng-disabled="!vm.phone || vm.phone.length === 0" class="button button-clear button-positive">Done</button>
+    </ion-nav-buttons>
+    <ion-content class="login">
+        <div class="text-center instructions">
+            Please confirm your country code and enter your phone number
+        </div>
+        <div class="list">
+            <label class="item item-input">
+                <input ng-model="vm.phone" type="text" placeholder="Your phone number"/>
+            </label>
+            <label class="item item-input">
+                <input ng-model="vm.password" type="password" placeholder="Your password"/>
+            </label>
+        </div>
+    </ion-content>
+</ion-view>
